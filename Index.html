@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Register</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+     <script src="https://kit.fontawesome.com/ff90116f27.js" crossorigin="anonymous"></script>
+    
+    <style>
+      .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    .btn-google {
+      background-color: whitesmoke;
+      color: ;
+      bottom: unset;
+      display: inline-block;
+      border-color: black;
+      margin-left: 150px;
+      width: 400px;
+      
+    }
+    .btn-facebook {
+      background-color: whitesmoke;
+      color: rgb(48, 118, 175);
+      border-color: rgb(48, 118, 175);
+      width: 400px;
+      
+    }
+        .main{
+            background-color: grey;
+            display: flex;
+	        justify-content: center;
+	        align-items: center;
+	        height: 700px;
+	        width: 1200px;
+        }
+        
+    
+        .container{
+        
+            border: 3px solid rgb(246, 248, 248);
+            height: 550px;
+            float: right;
+            width: 150px; 
+            background-color: white;
+             text-align: left; 
+            margin: 20px 0px;
+            padding: 47px 174px;
+            color: #756c6c;
+            margin-right: -300px;
+            margin-top: 33px;
+            margin-bottom: 10px;
+            margin-left: 0px     
+        }
+        img{
+            width: auto; 
+            height: 649px;
+            margin-top: 33px;
+            margin-left: 22px;
+            text-align: left; 
+            justify-content: left; 
+            float: left;   
+        }
+        .box{
+            border: none;
+            border-bottom: 2px solid rgb(100, 95, 95);
+            width: 300px;
+            /* justify-content: center; */
+            display: grid;
+            line-height: 1;
+            
+        }
+         
+        .btn {
+            width: 500px;
+            display: inline;
+            
+        }
+        .form {
+            text-align: left;
+            justify-content: center;
+            margin: 0;
+            padding-left: 0;
+        }
+        body{
+             margin: 0;
+             padding: 0;
+             font-family: Roboto;
+             background-repeat: no-repeat;
+             background-size: cover;
+             height: 100vh;
+             overflow: hidden;
+}
+
+.center{
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 29vw;
+  background: white;
+  border-radius: 10px;
+}
+
+.center h1{
+  text-align: center;
+  padding: -1 0 20px 0;
+}
+
+.center form{
+  padding: 0 14px;
+  box-sizing: border-box;
+}
+
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 4px 0;
+  right: 20px;
+  
+
+}
+.fa-user:before {
+    content: "\f007";
+    right: -4px;
+    position: relative;
+    bottom: -29px;
+}
+.fa-envelope:before {
+    content: "\f0e0";
+    position: relative;
+    right: -2px;
+    bottom: 9px;
+}
+.fa-lock:before {
+    content: "\f023";
+    position: relative;
+    right: -2px;
+    bottom: 10px;
+}
+.fa-eye-low-vision:before, .fa-low-vision:before {
+    content: "\f2a8";
+    position: relative;
+    right: -324px;
+    bottom: 10px;
+}
+
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  top: 50%;
+  position: relative;
+}
+
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  /* transform: translateY(-50%); */
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+
+/* .txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+} */
+
+.txt_field input:focus ~ span::before,
+.txt_field input:Valid ~ span::before{
+  width: 100%;
+}
+
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+
+.pass:hover{
+  text-decoration: underline;
+}
+
+input[type="Submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: green;
+  margin-top: 30px;
+  color: white;
+
+}
+
+input[type="Submit"]:hover{
+  background: rgb(48, 119, 48);
+  color: black;
+  transition: .5s;
+}
+
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+
+.signup_link a{
+  color: #2691d9;
+  text-decoration: none;
+}
+
+.signup_link a:hover{
+  text-decoration: underline;
+}
+
+.HomeAbout{
+  width: 100vw;
+  height: 25vh;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 160px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    
+}
+.material-icons {
+    font-size: 14px;
+    height: fit-content;
+    width: fit-content;
+}
+.fa-brands, .fab {
+    font-weight: 400;
+    margin-right: 100px;
+    position: absolute;
+        right: 20px;
+        transform: translate(-40%);
+        font-size: 20px;
+}
+.txt_field{
+  position: relative;
+  right: 20px;
+}
+
+
+        
+
+             
+
+        
+        
+    </style>
+</head>
+
+<body class="main">
+    <div class="whole">
+        <img src="cafe.jpg" alt="cafe">
+        <div class="container">
+            <div class="center">
+                <h1>Register</h1>
+                <form method="POST" action="">
+                    <div class="txt_field">
+                        <!-- <input type="text" name="name" required> -->
+                        
+                        <i class="fa-regular fa-user"></i>
+                         <input type="text" name="name" required>
+                        
+                        
+                        <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full Name</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="email" name="email" required>
+                        <i class="fa-regular fa-envelope"></i>
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email or phone number</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="password" name="password" required>
+                        <i class="fa-solid fa-lock"></i>
+                        
+                        
+                        
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password</label>
+                        <i class="fa-solid fa-eye-low-vision"></i>
+                    </div>
+                    <div class="txt_field">
+                        <input type="password" name="cpassword" required>
+                        <i class="fa-solid fa-lock"></i>
+                        
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Confirm Password</label>
+                        <i class="fa-solid fa-eye-low-vision"></i>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="checkbox">
+                        Lorem ipsum is simply dummy text of the printing and type 
+                    </div>
+                    <input name="submit" type="Submit" value="Register">
+                    <p>Register In With</p>
+                    <a href="https://google.com" class="btn btn-google" >
+                      <i class="fab fa-google"></i> 
+                    </a>
+                    <a href="https://facebook.com" class="btn btn-facebook">
+                      <i class="fab fa-facebook-f"></i> 
+                    </a>
+                    
+                    <div class="signup_link">
+                       Already Have an Account ? <a href="loginForm.php">Log in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </body>
+      </html>
+    
+    
+</body>
+</html>
